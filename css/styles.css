@@ -1,0 +1,35 @@
+  body {
+    background-color: #f8f5f1;
+  }
+
+  hr {
+    border-style: dotted;
+    border-width: 7px 0 0;
+    width: 9%;
+    border-color: grey;
+    /* A syntax do border-style é apenas um valor se aplica a todas as bordas
+    quando se tem dois valores o primeiro se aplica a borda superior e inferior,
+    e o segundo valor às laterais
+    Quando se tem tres valores o primeiro se aplica à mergem superior, o segundo
+    às margens laterais e o terceiro à margem inferior ou seja, uma solução alterativa
+    e provavelmente mais adequada para o problema seria
+
+    border-style:dotted none none;
+
+    alternativamente
+    border-top-style:dotted;
+    border-style:none; */
+  }
+
+  img {
+    height: 150px;
+    width: 200px;
+  }
+
+  h3 {
+    color:#66BFBF;
+  }
+
+  h1 {
+    color:#66BFBF;
+  }
