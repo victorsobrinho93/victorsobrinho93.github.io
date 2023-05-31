@@ -15,11 +15,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 
-<body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark">
+<body style="background-color:#323232">
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid montserrat">
-      <a class="navbar-brand" href="./contato.html">VICTOR SOBRINHO</a>
+      <a class="navbar-brand" href="#">VICTOR SOBRINHO</a>
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="./cv.html">ITEM 1</a>
@@ -33,9 +32,9 @@
             <li><a class="dropdown-item" href="https://github.com/victorsobrinho93/Python">PYTHON</a></li>
             <li><a class="dropdown-item" href="https://github.com/victorsobrinho93/Javascript">JAVASCRIPT</a></li>
             <li><a class="dropdown-item" href="#">HTML</a></li>
-            <!-- <li>
+            <li>
               <hr class="dropdown-divider">
-            </li> -->
+            </li>
 
           </ul>
         </li>
@@ -44,22 +43,38 @@
         </li>
       </ul>
     </div>
+  </nav> -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+          class="d-inline-block align-text-top">
+        Bootstrap
+      </a>
+    </div>
   </nav>
-  <h1 class="position-absolute translate-middle-x start-50">L O R E M I P S U M</h1>
-  <div class="content">
 
-    <div class="album container-fluid" style=" margin-top: 4rem;">
+  <div class="content">
+    <div class="album container-fluid">
+      <div class="row">
+        <h1>Completely out of ideas...</h1>
+      </div>
       <div class=" row">
         <!-- <div class="col">
           <img src="static/images/atrocity.jpg" class="card-img object-fit-fill">
         </div> -->
         <div class="col card text-center bg-transparent border-0">
           <img src="static/images/atrocity.jpg" class="card-img object-fit-fill">
-          <div class="card-img-overlay album-card">
-            <!-- <h3 class="card-title">ATROCITY EXHIBITION</h3> -->
-            <!-- <h5 class="card-title">DANNY BROWN</h5> -->
-            <!-- <a href="#" type="button" class="btn btn-transparent"><img src="static/images/spotify.webp" width="48"
-                alt=""></a> -->
+          <div id="atrocity" class="card-img-overlay album-card">
+            <!-- <div id="atrocityAlbumCard">
+              <h3 class="card-title">ATROCITY EXHIBITION</h3>
+              <h5 class="card-title">DANNY BROWN</h5>
+            </div> -->
+            <!-- <a href="#" type="button" class="btn btn-transparent" id="aeSpotifyBtn"><img
+                src="static/images/spotify.webp" width="48" alt=""></a>
+            <a href="https://music.youtube.com/playlist?list=OLAK5uy_mePbLtrZUtruO4VpGUnb4RboKQgQ021vQ" type="button"
+              class="btn btn-transparent" id="aeYtMusic"><img src="static/images/ytmusic.png" alt="" width="48"></a> -->
+
             <iframe class="embed-responsive" style=""
               src="https://open.spotify.com/embed/album/3A1vnUJDPz0xYMful9pO4I?utm_source=generator&theme=0"
               width="100%" height="100%" frameBorder="0" allowfullscreen=""
@@ -73,7 +88,8 @@
             <iframe style=""
               src="https://open.spotify.com/embed/album/0DK10k39r9LAZ7HgP1EPuB?utm_source=generator&theme=0"
               width="100%" height="100%" frameBorder="0" allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
           </div>
         </div>
         <div class="col card text-center bg-transparent border-0">
@@ -86,8 +102,6 @@
               loading="lazy"></iframe>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col card text-center bg-transparent border-0">
           <img src="static/images/lc.jpg" class="card-img object-fit-fill">
           <div class="card-img-overlay album-card">
@@ -102,6 +116,8 @@
               loading="lazy"></iframe>
           </div>
         </div>
+      </div>
+      <div class="row">
         <div class="col card text-center bg-transparent border-0">
           <img src="static/images/mercy.jpg" class="card-img object-fit-fill">
           <div class="card-img-overlay album-card">
@@ -130,8 +146,6 @@
               loading="lazy"></iframe>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col card text-center bg-transparent border-0">
           <img src="static/images/rip.jpg" alt="" class="card-img object-fit-fill">
           <div class="card-img-overlay album-card">
@@ -160,6 +174,10 @@
               loading="lazy"></iframe>
           </div>
         </div>
+
+      </div>
+
+      <div class="row">
         <div class="col card text-center bg-transparent border-0">
           <img src="static/images/taboo.jpg" alt="" class="card-img object-fit-fill">
           <div class="card-img-overlay album-card">
@@ -174,8 +192,6 @@
               loading="lazy"></iframe>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col card text-center bg-transparent border-0">
           <img src="static/images/tpab.jpg" alt="" class="card-img object-fit-fill">
           <div class="card-img-overlay album-card">
@@ -227,4 +243,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+  <!-- <script src="static/js/main.js"></script> -->
 </body>

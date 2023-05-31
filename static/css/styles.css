@@ -8,18 +8,29 @@
   color: lightgrey;
 }
 
-body {
+/* body {
   background-color: #323232;
+} */
+
+#title-card {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: #0D7377;
+
 }
 
-.content h1 {
+/* .content h1 {
   color: white;
   margin-top: 3rem;
 
-}
+} */
 
 ul.nav a:hover {
   color: #14FFEC;
+}
+
+a {
+  color: #0D7377;
 }
 
 /* .album img {
