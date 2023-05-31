@@ -1,8 +1,61 @@
 .navbar {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
+  background-color: #212121;
 }
 
 .nav-link {
   color: lightgrey;
+}
+
+body {
+  background-color: #323232;
+}
+
+.content h1 {
+  color: white;
+  margin-top: 3rem;
+
+}
+
+ul.nav a:hover {
+  color: #14FFEC;
+}
+
+/* .album img {
+  max-width: 80%;
+  margin-top: 2rem;
+} */
+
+.album-card h5,
+h3,
+a,
+iframe {
+  opacity: 0%;
+}
+
+.album-card h3 {
+  margin-top: 20%;
+}
+
+.album-card:hover * {
+  opacity: 1;
+  transition: opacity 0.75s ease-in;
+  size: 100%;
+  /* text-shadow: -1px 3px black; */
+  /* -webkit-text-stroke: 2px black; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: white;
+}
+
+.card:hover .card-img {
+  opacity: 25%;
+  transition: opacity .5s ease-out;
+}
+
+.card {
+  max-width: 80%;
+  margin: 4px;
 }
