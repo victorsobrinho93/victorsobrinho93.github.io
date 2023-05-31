@@ -22,17 +22,15 @@
 //     }
 // })
 
-function SpotifyEmbed(buttonId, iframeContainer, spotifyUrl, albumInfo) {
+function SpotifyEmbed(iFrameContainer) {
     // this.button = buttonId;
     // this.container = containerId;
     this.container = document.getElementById(iframeContainer);
     console.log(this.container);
-    this.source = spotifyUrl;
     this.iframe = null;
-    this.albumInfo = document.getElementById(albumInfo);
+    this.albumInfo = container.querySelector(".album-info");
     console.log(`albumInfo ${this.albumInfo}`)
-
-    this.button = document.getElementById(buttonId);
+    this.button = container.querySelector(".media-button");
     this.appendChild = function (childElement) {
         this.container.appendChild(childElement);
     };
@@ -52,19 +50,19 @@ function SpotifyEmbed(buttonId, iframeContainer, spotifyUrl, albumInfo) {
         if (this.iframe) {
             this.removeChild(this.iframe);
             this.iframe = null;
-            document.getElementById(albumInfo).style.display = "inline";
+            document.getElementById(albumInfo).style.display = "block";
             // this.albumInfo.style.display = 'inline-block';
 
         } else {
             this.iframe = document.createElement("iframe");
-            this.iframe.src = spotifyUrl;
+            this.iframe.src = container.querySelector(".embed-responsive").getAttribute("src");
             this.iframe.style.width = '100%';
             this.iframe.style.height = '100%';
             this.appendChild(this.iframe);
-            document.getElementById(albumInfo).style.display = 'none';
+            document.getElementById(albumInfo).style.display = "none";
         }
     })
 
 }
 
-var dannyBrownAtrocity = SpotifyEmbed("aeSpotifyBtn", "atrocity", "https://open.spotify.com/embed/album/3A1vnUJDPz0xYMful9pO4I?utm_source=generator&theme=0", "atrocityAlbumCard")
+var dannyBrownAtrocity = SpotifyEmbed("atrocity")
